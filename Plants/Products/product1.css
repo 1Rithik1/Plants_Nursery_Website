@@ -1,0 +1,211 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.title a {
+	color: green;
+	font-size: 44px;
+}
+.title a:hover {
+	color: lightgreen;
+}
+header {
+	height: 18%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+/*nav*/
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+nav {
+	flex: 1;
+	text-align: right;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 50px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 28px;
+	color:green;
+	font-family: sans-serif;
+}
+nav ul li a:hover {
+	color: lightgreen;
+}
+a {
+	text-decoration: none;
+	color:black;
+}
+
+section {
+	width: 90%;
+	height: 90%;
+	display: flex;
+	margin-top: 60px;
+	padding: 10px;
+	margin-left: 30px;
+}
+section .img {
+	margin-top: 50px;
+	padding: 10px;
+    display: block;
+}
+section .details {
+	margin-top: 50px;
+	padding: 20px;
+}
+.details span{
+    display: block;
+}
+.details .new {
+	padding: 12px;
+	font-size: 20px;
+	background-color: green;
+	color: white;
+	width: 55%;
+	margin-bottom: 20px;
+}
+.product-name{
+    font-size: 26px;
+    margin-bottom: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: arial;
+}
+.product-price{
+    color: green;
+    font-size: 25px;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-rating span{
+    margin-right: 6px;
+}
+.quantity {
+	margin-top: 10px;
+	padding: 5px;
+	width: 50%;
+}
+.quantity label {
+	font-size: 18px;
+}
+.quantity input {
+	padding: 5px;
+  	width: 55%;
+  	border: none;
+	font-size: 16px;
+	border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.details .about {
+	padding: 5px;
+	font-size: 20px;
+	width: 15%;
+	margin-bottom: 20px;
+	color: green;
+	border-bottom: solid;
+	border-color: green;
+}
+.product-description{
+    font-weight: 18px;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-top: 22px;
+    font-size: 20px;
+}
+.btn-groups{
+    margin-top: 22px;
+}
+.btn-groups button{
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups button .fa{
+    margin-right: 8px;
+}
+.Add-to-Cart{
+    background-color: #FF9F00;
+    border: 2px solid #FF9F00;
+    margin-right: 8px;
+}
+.Add-to-Cart:hover{
+    background-color: #fff;
+    color: #FF9F00;
+}
+
+/*selling*/
+.selling-title {
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 32px;
+}
+.selling {
+    display: flex; 
+    padding: 20px;   
+}
+.selling .products {
+	margin-top: 10px;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+    border: solid;
+    padding: 10px;
+    border-color: lightgray;
+}
+.selling .products:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+.selling .products .img {
+    height: 200px;
+    width: 100%;
+}
+.selling .products .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.selling .products .content {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.selling .products .content h3 {
+	color: green;
+}
+.selling .products .content a {
+	color: black;
+}
+.products .fa {
+	color: gold;
+	font-size: 15px;
+}
+del {
+	color: gray;
+}

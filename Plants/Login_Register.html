@@ -1,0 +1,96 @@
+<html>
+<head>
+	<title>Plants Nursery</title>
+	<link rel="stylesheet" type="text/css" href="Login_Register.css">
+</head>
+	<body>
+		<section>
+			<div id="login-form" class="login-page">
+				<div class="form-box">
+					<div class="button-box">
+						<div id=btn></div>
+						<button type="button" class="toggle-btn" onclick="login()">Login</button>
+						<button type="button" class="toggle-btn" onclick="register()">Register</button>
+					</div>
+
+					<form id="login" class="input-group-login" action="login.php" method="POST">
+						<input type="email" class="input-field" placeholder="Email" name="email" required>
+						<input type="text" class="input-field" placeholder="Password" name="password" required>
+						<button type="submit" class="submit-btn">Login</button><br>
+						<center><div class="forgot"><a href="forgot.php">Forgot Password ?</a></div></center><br>
+						<p><center> New User ? Then Register ! </center></p>
+					</form>
+						
+					<form id="register" class="input-group-register" action="register.php" method="POST" onsubmit="return validateForm()">
+						<input type="text" class="input-field" placeholder="Firstname"  name="firstname" id="fn" required>
+						<div id="error_message1"></div>
+						<input type="text" class="input-field" placeholder="Lastname" name="lastname" id="ln" required>
+						<div id="error_message2"></div>
+						<input type="email" class="input-field" placeholder="Email" name="email" id="em" required>
+						<input type="num" class="input-field" placeholder="Mobile" name="mobile" id="mb" required>
+						<div id="error_message3"></div>
+						<input type="text" class="input-field" placeholder="Address" name="address" id="ad" required>
+						<input type="text" class="input-field" placeholder="Password"  name="password" id="pw" required>
+						<div id="error_message4"></div>
+						<button type="submit" class="submit-btn">Register</button>
+					</form>
+				</div>
+			</div>	
+			<div class="imgL1">
+				<img src="L1.jpeg" width="1000">
+			</div>
+		</section>
+
+		<script>
+			var x = document.getElementById("login");
+			var y = document.getElementById("register");
+			var z = document.getElementById("btn");
+
+			function register() {
+				x.style.left = "-400px";
+				y.style.left = "50px";
+				z.style.left = "110px";
+			}
+			function login() {
+				x.style.left = "50px";
+				y.style.left = "450px";
+				z.style.left = "0px";
+			}
+
+			function validateForm()
+			{
+				var a = document.getElementById("fn").value;
+				var b = document.getElementById("ln").value;
+				var c = document.getElementById("mb").value;
+				var d = document.getElementById("pw").value;
+
+				if(!/^[a-zA-Z]+$/i.test(a))
+				{
+					text1 = "Only Characters are allowed";
+				    error_message1.innerHTML = text1;
+				    return false;
+				}
+
+				if(!/^[a-zA-Z]+$/i.test(b))
+				{
+					text2 = "Only Characters are allowed";
+				    error_message2.innerHTML = text2;
+				    return false;
+				}
+
+			    if(isNaN(c) || c.length != 10)
+			    {
+				    text3 = "Please Enter valid Phone Number";
+				    error_message3.innerHTML = text3;
+				    return false;
+				}
+				if(d.length < 6)
+			    {
+				    text4 = "Password should have atleast 6 Characters";
+				    error_message4.innerHTML = text4;
+				    return false;
+				}
+			}
+		</script>
+	</body>
+</html>

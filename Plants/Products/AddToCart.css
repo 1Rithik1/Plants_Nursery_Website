@@ -1,0 +1,232 @@
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.title a {
+	color: green;
+	font-size: 44px;
+}
+.title a:hover {
+	color: lightgreen;
+}
+header {
+	height: 18%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+/*nav*/
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 30px;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+nav {
+	flex: 1;
+	text-align: right;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	margin-right: 50px;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 28px;
+	color:green;
+	font-family: sans-serif;
+}
+nav ul li a:hover {
+	color: lightgreen;
+}
+a {
+	text-decoration: none;
+	color:black;
+}
+
+.menu-bar {
+	margin-top: 100px;
+	background-color: green;
+	text-align: center;
+}
+.menu-bar ul {
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu-bar ul li {
+	width: 140px;
+	margin: 14px;
+	padding: 1px;
+}
+.menu-bar ul li a {
+	text-decoration: none;
+	color: lightgreen;
+	font-size: 25px;
+}
+.menu-bar ul li a:hover {
+	color: white;
+}
+
+.cart {
+	margin-top: 200px;
+	text-align: center;
+}
+.cart-content {
+	border: solid;
+	border-color: green;
+	padding: 150px;
+	margin: 10px;
+}
+.cart p {
+	color: green;
+	font-size: 32px;
+}
+.cart .cart-content a {
+	font-size: 30px;
+	color: green;
+	background: lightgreen;
+	padding: 10px;
+	border: solid;
+}
+.cart .cart-content a:hover {
+	color: lightgreen;
+	background: green;
+}
+
+/*footer*/
+footer {
+	margin-top: 100px;
+	bottom: 0px;
+	width: 100%;
+	background-color: lightgreen;
+}
+.BackToTop {
+	padding: 15px;
+	background-color: green;
+}
+.BackToTop a {
+	color: white;
+}
+.BackToTop a:hover {
+	color: lightgreen;
+}
+.main-content {
+	display: flex;
+}
+.main-content .box {
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+.box h2 {
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.box .content {
+	margin: 20px 0 0 0;
+	font-size: 18px;
+	position: relative;
+}
+.box .content:after {
+	position: absolute;
+	content: '';
+	top:-10px;
+	height: 2px;
+	width: 20%;
+	background: red;
+}
+.left .content p {
+	text-align: justify;
+}
+.left .content .social {
+	margin: 20px 0 0 0;
+}
+.left .content .social a {
+	margin: 20px 0 0 0;
+}
+.left .content .social a span {
+	height: 40px;
+	width: 40px;
+	background: lightgreen;
+	color: black;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s;
+}
+.left .content .social a span:hover {
+	background: green;
+	color: lightgreen;
+}
+.center .content .downtitle {
+	margin-top: 90px;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+	border: solid;
+	background: green;
+}
+.center .content .downtitle:hover {
+	color: white;
+}
+.right form .text {
+	margin-bottom: 2px;
+}
+.right form .msg {
+	margin-top: 5px;
+}
+.right form input, .right form textarea {
+	width: 100%;
+	font-size: 20px;
+	background: white;
+	padding-left: 10px;
+	border: 1px solid #222222;
+}
+.right form input:focus, .right form textarea:focus {
+	outline-color: #3498db;
+}
+.right form input {
+	height: 35px;
+}
+.right form .btn {
+	margin-top: 5px;
+}
+.right form .btn button {
+	height: 40px;
+	width: 100%;
+	border: none;
+	outline: none;
+	background: green;
+	color: lightgreen;
+	font-size: 20px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: .3s;
+}
+.right form .btn button:hover {
+	background: red;
+	color: white;
+}
+.bottom center {
+	padding: 12px;
+	font-size: 18px;
+	background: green;
+}
+.bottom center span {
+	color: white;
+}
