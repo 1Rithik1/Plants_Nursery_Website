@@ -6,7 +6,7 @@ XAMPP Control Panel is used to control the apache server and the database.
 
 Screenshots:
 
-LOGIN / REGISTER PAGE
+Login / Register Page
 
 ![image](https://user-images.githubusercontent.com/85878447/192216397-e1ddf377-e6d2-42c7-b18a-5ef9f11ed7db.png)
 
